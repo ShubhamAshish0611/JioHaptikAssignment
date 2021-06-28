@@ -1,0 +1,63 @@
+@import "../../constant.scss";
+
+.friendsParent {
+    max-width: 300px;
+    .friendsHeader {
+        background: $gray_1;
+        @include flex-box();
+        @include align-items-center();
+        @include justify-content-between();
+
+        input {
+            border: 1px solid $gray_3;
+            max-width: 150px;
+            height: 30px;
+            border-radius: 15px;
+            padding: 5px 10px;
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+    }
+
+    .friendsInput {
+        input {
+            border: none;
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+    }
+
+    .friendsList {
+        .friendsListItem {
+            .friendListItemText {
+                font-size: 12px;
+                color: $gray_3;
+            }
+
+            .startSvg,
+            .deleteSvg {
+                border-radius: 3px;
+                width: 30px;
+                height: 25px;
+                fill: $gray_3;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .pageNumbers {
+        li {
+            list-style-type: none;
+            cursor: pointer;
+
+            &.active {
+                background: $gray_3;
+                color: $white;
+            }
+        }
+    }
+}

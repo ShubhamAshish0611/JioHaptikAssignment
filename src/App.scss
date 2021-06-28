@@ -1,0 +1,179 @@
+@import './constant.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    background: $white;
+    box-sizing: border-box;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: left;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+@for $i from 0 through 100 {
+    .w-#{$i} {
+        width: percentage($i/100);
+    }
+}
+
+@for $i from 0 through 32 {
+    .p-#{$i} {
+        padding: #{$i}px;
+    }
+
+    .pl-#{$i} {
+        padding-left: #{$i}px;
+    }
+
+    .pr-#{$i} {
+        padding-right: #{$i}px;
+    }
+
+    .pt-#{$i} {
+        padding-top: #{$i}px;
+    }
+
+    .pb-#{$i} {
+        padding-bottom: #{$i}px;
+    }
+
+    .m-#{$i} {
+        margin: #{$i}px;
+    }
+
+    .ml-#{$i} {
+        margin-left: #{$i}px;
+    }
+
+    .mr-#{$i} {
+        margin-right: #{$i}px;
+    }
+
+    .mt-#{$i} {
+        margin-top: #{$i}px;
+    }
+
+    .mb-#{$i} {
+        margin-bottom: #{$i}px;
+    }
+}
+
+@for $i from 0 through 8 {
+    .border-#{$i} {
+        border: #{$i}px solid $gray_3;
+    }
+
+    .border-top-#{$i} {
+        border-top: #{$i}px solid $gray_3;
+    }
+
+    .border-bottom-#{$i} {
+        border-bottom: #{$i}px solid $gray_3;
+    }
+
+    .border-left-#{$i} {
+        border-left: #{$i}px solid $gray_3;
+    }
+
+    .border-right-#{$i} {
+        border-right: #{$i}px solid $gray_3;
+    }
+}
+
+/* flex classes start from here */
+.flex-box {
+    @include flex-box();
+}
+.inline-flex {
+    @include inline-flex();
+}
+.align-items-center {
+    @include align-items-center();
+}
+.align-items-start {
+    @include align-items-start();
+}
+.align-items-end {
+    @include align-items-end();
+}
+.align-items-streach {
+    @include align-items-streach();
+}
+.justify-content-center {
+    @include justify-content-center();
+}
+.justify-content-start {
+    @include justify-content-start();
+}
+.justify-content-end {
+    @include justify-content-end();
+}
+.justify-content-around {
+    @include justify-content-around();
+}
+.justify-content-between {
+    @include justify-content-between();
+}
+.flex-wrap {
+    @include flex-wrap();
+}
+.flex-no-wrap {
+    @include flex-no-wrap();
+}
+.flex-wrap-reverse {
+    @include flex-wrap-reverse();
+}
+.flex-column {
+    @include flex-column();
+}
+.flex-column-rev {
+    @include flex-column-rev();
+}
+.flex-row {
+    @include flex-row();
+}
+.flex-row-rev {
+    @include flex-row-rev();
+}
+.flex-1 {
+    @include flex-1();
+}
+.flex-2 {
+    @include flex-2();
+}
+.flex-3 {
+    @include flex-3();
+}
+.flex-4 {
+    @include flex-4();
+}
+.flex-5 {
+    @include flex-5();
+}
+/* flex classes ends here */

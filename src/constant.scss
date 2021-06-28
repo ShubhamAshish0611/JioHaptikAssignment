@@ -1,0 +1,126 @@
+/* Constant Variable declaration starts here */
+$white: #ffffff;
+$gray_1: #f1f1f1;
+$gray_2: #ebebeb;
+$gray_3: #b8b8b8;
+$warning: #ffff00;
+/* Constant Variable declaration ends here */
+
+
+/* mixins starts from here */
+@mixin flex-box() {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+@mixin inline-flex() {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+@mixin align-items-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+@mixin align-items-start {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+@mixin align-items-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+@mixin align-items-streach {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+@mixin justify-content-center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+@mixin justify-content-start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+@mixin justify-content-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+@mixin justify-content-around {
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+@mixin justify-content-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+@mixin flex-wrap {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+@mixin flex-no-wrap {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+@mixin flex-wrap-reverse {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+}
+@mixin flex-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+@mixin flex-column-rev {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+@mixin flex-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+@mixin flex-row-rev {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+@mixin flex-1 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+@mixin flex-2 {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+@mixin flex-3 {
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+}
+@mixin flex-4 {
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+}
+@mixin flex-5 {
+    -webkit-box-flex: 5;
+    -ms-flex: 5;
+    flex: 5;
+}
+/* mixin ends here */
